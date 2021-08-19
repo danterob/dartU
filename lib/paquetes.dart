@@ -30,9 +30,10 @@ void getPais() {
     print('País: ${resReqRes.name}');
     print('Población: ${resReqRes.population}');
     print('Fronteras:');
-    for (var i = 0; i < resReqRes.borders.length; i++) {
-      print('  ${resReqRes.borders[i]}');
-    }
+    resReqRes.borders.forEach((borders) => print('  $borders'));
+    // for (var i = 0; i < resReqRes.borders.length; i++) {
+    //   print('  ${resReqRes.borders[i]}');
+    // }
     print('Lenguage: ${resReqRes.languages}');
     print('Latitud: ${resReqRes.latlng[0]}');
     print('Longitud: ${resReqRes.latlng[1]}');
